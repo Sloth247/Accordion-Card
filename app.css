@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    margin: 0;
+    padding: 0;
+    color: hsl(238, 29%, 16%);
+    
+}
+
+#inner-container {
+    width: 1000px;
+    background-color: #fff;
+    margin: 10% auto;
+    border: solid transparent;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-image: url('images/bg-pattern-desktop.svg');
+    background-position: -400px -150px;
+    background-repeat: no-repeat;
+    background-size: 800px 800px ;   
+}
+
+#left-container {
+    width: 500px;
+    
+}
+
+#left-container .woman {
+    position: relative;
+    top: 0px;
+    left: -70px;
+    z-index: 0;
+    overflow: hidden;
+     
+}
+
+#left-container .box {
+    position: absolute;
+    top: 230px;
+    left: -100px;
+}
+
+#right-container {
+    width: 40%;
+    margin: 60px 80px;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+.faq-container {
+    margin: 0 auto;
+    font-size: 12px;
+}
+.faq {
+    background-color: transparent;
+    border-bottom: solid 1px hsl(240, 5%, 91%);
+    margin: 20px 0;
+    padding: 0 0 10px 0;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+
+
+.faq-title {
+    font-weight: normal;
+    cursor: pointer;
+}
+.faq-title:hover, .fac-title:focus {
+    color: hsl(14, 88%, 65%);
+}
+
+.faq.active .faq-title {
+    font-weight: bold;
+    
+}
+.faq-text {
+    display: none;
+}
+.faq.active .faq-text {
+    display: block;
+}
+
+.faq-toggle {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+}
+.faq.active .faq-toggle {
+    transform: rotate(180deg);
+}
+
