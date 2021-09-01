@@ -124,6 +124,7 @@ details:not([open]) > summary:hover {
   body {
     max-width: 62.5rem;
     display: block;
+    margin: 0 auto;
   }
   .main {
     background-color: #fff;
