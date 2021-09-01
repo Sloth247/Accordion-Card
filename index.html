@@ -1,93 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="app.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-  
-  <title>Frontend Mentor | FAQ Accordion Card</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-<div id="inner-container">
-<div id="left-container">
-  <img src="images/illustration-woman-online-desktop.svg" alt="woman" class="woman">
-  <img src="images/illustration-box-desktop.svg" alt="box" class="box">
-</div>
-<div id="right-container">
-  <h1>FAQ</h1>
-  <div class="faq-container">
-    <div class="faq">
-      <h3 class="faq-title">
-  How many team members can I invite?</h3>
-      <p class="faq-text">
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
-      </p>
-      <button class="faq-toggle">
-        <img src="images/icon-arrow-down.svg" alt="arrow-down">
-      </button>
+    <link rel="stylesheet" href="app.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style></style>
+  </head>
+  <body>
+    <main class="main">
+      <div class="main--container">
+        <picture class="main__img-container">
+          <source
+            srcset="./images/illustration-woman-online-desktop.svg"
+            media="(min-width: 640px)"
+          />
+          <img
+            src="./images/illustration-woman-online-mobile.svg"
+            alt=""
+            aria-hidden="true"
+            class="mainvisual"
+          />
+        </picture>
+
+        <div class="main__card">
+          <h1 class="main__title">FAQ</h1>
+          <div class="main__accordion">
+            <details class="main__accordion--item">
+              <summary class="main__accordion--title">
+                How many team members can I invite?
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  alt="See the answer"
+                  class="main__accordion--arrow"
+                />
+              </summary>
+              <p>
+                You can invite up to 2 additional users on the Free plan. There
+                is no limit on team members for the Premium plan.
+              </p>
+            </details>
+            <details class="main__accordion--item">
+              <summary class="main__accordion--title">
+                What is the maximum file upload size?
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  alt="See the answer"
+                  class="main__accordion--arrow"
+                />
+              </summary>
+              <p>
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </p>
+            </details>
+            <details class="main__accordion--item">
+              <summary class="main__accordion--title">
+                How do I reset my password?
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  alt="See the answer"
+                  class="main__accordion--arrow"
+                />
+              </summary>
+              <p>
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page. A reset link will be emailed to you.
+              </p>
+            </details>
+            <details class="main__accordion--item">
+              <summary class="main__accordion--title">
+                Can I cancel my subscription?
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  alt="See the answer"
+                  class="main__accordion--arrow"
+                />
+              </summary>
+              <p>
+                Yes! Send us a message and we’ll process your request no
+                questions asked.
+              </p>
+            </details>
+            <details class="main__accordion--item">
+              <summary class="main__accordion--title">
+                Do you provide additional support?
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  alt="See the answer"
+                  class="main__accordion--arrow"
+                />
+              </summary>
+              <p>
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="attribution">
+      Design and Concepts provided by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by Yuko Horita.
     </div>
-    
-<div class="faq active">
-  <h3 class="faq-title">
-  What is the maximum file upload size?</h3>
-  <p class="faq-text">
-  No more than 2GB. All files in your account must fit your allotted storage space.
-</p>
-<button class="faq-toggle">
-  <img src="images/icon-arrow-down.svg" alt="arrow-down">
-</button>
-</div>
-
-<div class="faq">
-  <h3 class="faq-title">
-  How do I reset my password?</h3>
-  <p class="faq-text">
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.</p>
-  <button class="faq-toggle">
-    <img src="images/icon-arrow-down.svg" alt="arrow-down">
-  </button>
-</div>
-
-<div class="faq">
-  <h3 class="faq-title">
-  Can I cancel my subscription? </h3>
-  <p class="faq-text">
-  Yes! Send us a message and we’ll process your request no questions asked.
-</p>
-<button class="faq-toggle">
-  <img src="images/icon-arrow-down.svg" alt="arrow-down">
-</button>
-</div>
-
-<div class="faq">
-  <h3 class="faq-title">
-  Do you provide additional support?</h3>
-  <p class="faq-text">
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
-</p>
-<button class="faq-toggle">
-  <img src="images/icon-arrow-down.svg" alt="arrow-down">
-</button>
-</div>
-</div>
-</div>
-<script src="script.js"></script>
-<!--  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
-</body>
+  </body>
 </html>
